@@ -21,8 +21,7 @@ O WinFIM Guard é uma aplicação desktop autônoma, focada em monitoramento de 
 
 ## 🎥 Demonstração
 
-![WinFIM Guard em Ação](
-)
+![WinFIM Guard em Ação](./demo.gif)
 
 *Acima, a demonstração do WinFIM capturando e classificando a severidade de ataques simulados em tempo real.*
 
