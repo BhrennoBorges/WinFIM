@@ -1,0 +1,25 @@
+<Application x:Class="WinFIM.UI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WinFIM.UI"
+             xmlns:converters="clr-namespace:WinFIM.UI.Converters"
+             xmlns:viewmodels="clr-namespace:WinFIM.UI.ViewModels"
+             xmlns:views="clr-namespace:WinFIM.UI.Views">
+    <Application.Resources>
+         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+         <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+
+         <DataTemplate DataType="{x:Type viewmodels:DashboardViewModel}">
+             <views:DashboardView/>
+         </DataTemplate>
+         <DataTemplate DataType="{x:Type viewmodels:DirectoriesViewModel}">
+             <views:DirectoriesView/>
+         </DataTemplate>
+         <DataTemplate DataType="{x:Type viewmodels:BaselineViewModel}">
+             <views:BaselineView/>
+         </DataTemplate>
+         <DataTemplate DataType="{x:Type viewmodels:EventsViewModel}">
+             <views:EventsView/>
+         </DataTemplate>
+    </Application.Resources>
+</Application>
